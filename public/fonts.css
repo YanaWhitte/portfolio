@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "AktivGrotesk";
+  src: url(./fonts/AktivGrotesk-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "AktivGroteskEx";
+  src: url(./fonts/AktivGroteskEx-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "AktivGroteskEx";
+  src: url(./fonts/AktivGroteskEx-Black.ttf);
+  font-weight: 900;
+}

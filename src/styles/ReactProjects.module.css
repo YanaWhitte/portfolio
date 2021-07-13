@@ -1,0 +1,4 @@
+.reactProjects {
+  display: grid;
+  grid-template-columns: 101px 1fr;
+}
