@@ -38,30 +38,8 @@ class BlackSquare extends React.Component {
         <ul className={s.menu}>
           <li><a className={s.menuItem} href="https://github.com/YanaWhitte" target="_blank">github</a></li>
           <li><a className={s.menuItem} href="https://www.linkedin.com/in/whiony" target="_blank">linkedin</a></li>
-          <li className={`${s.showEmail}`}>
-            <a className={`${s.menuItem}`} href="#"
-              onClick={() => {
-                if (this.state.emailDisplay === "none") {
-                  this.setState({ emailDisplay: "block" });
-                } else {
-                  this.setState({ emailDisplay: "none" });
-                }
-              }}
-            >email</a>
-            <a href="mailto:whiony@gmail.com" className={s.email} style={{ display: `${this.state.emailDisplay}` }}>whiony@gmail.com</a>
-          </li>
-          <li className={`${s.showPhone}`}>
-            <a className={`${s.menuItem}`} href="#"
-              onClick={() => {
-                if (this.state.phoneDisplay === "none") {
-                  this.setState({ phoneDisplay: "block" });
-                } else {
-                  this.setState({ phoneDisplay: "none" });
-                }
-              }}
-            >call me</a>
-            <a className={`${s.phone}`} href="tel:+380500877535" style={{ display: `${this.state.phoneDisplay}` }}>+380500877535</a>
-          </li>
+          <li><a className={`${s.menuItem}`} href="mailto:whiony@gmail.com">email</a></li>
+          <li><a className={`${s.menuItem}`} href="tel:+380500877535">call me</a></li>
           <li><a className={`${s.menuItem} ${s.resume}`} href="/CV.pdf" download>resume</a></li>
         </ul>
       </nav>

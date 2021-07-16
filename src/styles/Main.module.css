@@ -1,5 +1,6 @@
 .main {
-  margin: 0 85px;
+  margin: 0 auto;
+  max-width: 1264px;
   height: 100vh;
 }
 
@@ -51,25 +52,6 @@
 
 .resume {
   margin-right: 17px;
-}
-
-.showEmail,
-.showPhone {
-  position: relative;
-}
-
-.email {
-  position: absolute;
-  top: 25px;
-  left: -55px;
-  font-weight: 500;
-}
-
-.phone {
-  position: absolute;
-  top: -21px;
-  left: -35px;
-  font-weight: 500;
 }
 
 .titleBlock {

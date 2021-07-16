@@ -1,6 +1,7 @@
 .ArrowDown {
   display: flex;
-  width: 94%;
+  width: 100%;
+  left: 0;
   position: absolute;
   justify-content: center;
   bottom: 10px;
