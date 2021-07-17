@@ -1,0 +1,66 @@
+.card {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-right: 17px;
+  box-sizing: border-box;
+  background: #000;
+}
+
+.foodService {
+  justify-self: start;
+}
+
+.card img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+  border-radius: 8px;
+}
+
+.card:hover img {
+  filter: grayscale(0%);
+  transition: all 0.5s ease;
+}
+
+.bigCard {
+  width: 518px;
+  height: 518px;
+}
+
+.middleCard {
+  width: 303px;
+  height: 303px;
+}
+
+.smallCard {
+  width: 194px;
+  height: 194px;
+}
+
+.vkStatistics img {
+  top: 51px;
+  left: 55px;
+}
+
+.foodService img {
+  top: 51px;
+  left: 70px;
+}
+
+.caped img {
+  top: 30px;
+  left: -80px;
+}
+
+.generator img {
+  bottom: 70px;
+  left: 40px;
+}
+
+.challenges img {
+  top: 51px;
+  left: 70px;
+}
