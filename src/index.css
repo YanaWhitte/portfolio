@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "AktivGroteskEx",
-    "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "AktivGroteskEx", "Helvetica Neue", sans-serif;
   font-weight: 700;
   font-size: 18px;
   -webkit-font-smoothing: antialiased;
@@ -9,8 +8,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 * {
@@ -23,4 +21,8 @@ a {
   font-weight: 700;
   color: #fff;
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
 }

@@ -1,0 +1,87 @@
+.contactsHolder {
+  padding-top: 220px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  width: 1264px;
+  margin: 0 auto;
+}
+
+.contacts {
+  grid-column-start: 2;
+}
+
+.btnRow:nth-child(2) {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 6fr 4fr;
+  gap: 20px;
+}
+
+.downloadBtn,
+.emailBtn,
+.codeBtn {
+  position: relative;
+  border: none;
+  font-size: 107px;
+  overflow: hidden;
+}
+
+.downloadBtn a,
+.emailBtn a,
+.codeBtn a {
+  position: absolute;
+  bottom: -31px;
+  right: -3px;
+  font-family: "AktivGroteskEx";
+}
+
+.downloadBtn {
+  background: #000;
+  height: 203px;
+  width: 100%;
+}
+
+.downloadBtn a {
+  color: #fff;
+}
+
+.emailBtn {
+  background: #000;
+  height: 203px;
+}
+
+.emailBtn a {
+  color: #000;
+  text-shadow: -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff, 1px 0 0 #fff, 1px 1px 0 #fff, 0 1px 0 #fff,
+    -1px 1px 0 #fff, -1px 0 0 #fff;
+}
+
+.codeBtn {
+  background: transparent;
+  border: 3px solid #000;
+  height: 407px;
+  text-align: right;
+}
+
+.codeBtn a {
+  color: #000;
+}
+
+.arrow {
+  margin-top: 120px;
+  margin-bottom: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.arrowBtn {
+  display: flex;
+  flex-direction: column;
+  font-family: "AktivGrotesk";
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  background: transparent;
+}

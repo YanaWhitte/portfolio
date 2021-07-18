@@ -8,7 +8,7 @@ import ContactButtons from "./components/ContactButtons";
 function App() {
   return (
     <div className="App">
-      <Sidebar />
+      {/* <Sidebar /> */}
       <Main />
       <ReactProjects />
       <HtmlProjects />
