@@ -3,6 +3,7 @@ import Sidebar from "./components/Sidebar";
 import Main from "./components/Main";
 import ReactProjects from "./components/ReactProjects";
 import HtmlProjects from "./components/HtmlProjects";
+import ContactButtons from "./components/ContactButtons";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Main />
       <ReactProjects />
       <HtmlProjects />
+      <ContactButtons />
     </div>
   );
 }

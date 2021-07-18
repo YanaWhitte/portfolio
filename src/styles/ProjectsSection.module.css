@@ -1,0 +1,96 @@
+.projectsSection {
+  display: grid;
+  width: 1264px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 10fr;
+  grid-gap: 20px;
+  margin-top: 140px;
+}
+
+.mainGrid .row {
+  display: grid;
+  grid-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.mainGrid.reactGrid .row:nth-child(1) {
+  grid-template-columns: 3fr 5fr 2fr;
+}
+
+.mainGrid.reactGrid .row:nth-child(2) {
+  grid-template-columns: 5fr 5fr;
+}
+
+.mainGrid.reactGrid .row:nth-child(3) {
+  grid-template-columns: 3fr 7fr;
+}
+
+.htmlGrid.mainGrid .row:nth-child(1) {
+  grid-template-columns: 5fr 5fr;
+}
+
+.htmlGrid.mainGrid .row:nth-child(2),
+.htmlGrid.mainGrid .row:nth-child(4) {
+  grid-template-columns: 3fr 5fr 2fr;
+}
+
+.htmlGrid.mainGrid .row:nth-child(3) {
+  grid-template-columns: 3fr 7fr;
+}
+
+.htmlGrid.mainGrid .row:nth-child(3) .columnContainer .innerRow {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  grid-gap: 20px;
+}
+
+.htmlGrid.mainGrid .row:nth-child(2) .pizzaTime,
+.htmlGrid.mainGrid .row:nth-child(4) .wknd,
+.innerRow .dashboard {
+  grid-column-start: 2;
+}
+
+.columnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.columnContainer .DesignerMarketplace,
+.columnContainer .landify {
+  margin-top: 20px;
+}
+
+.freshnesecom,
+.dashboard {
+  align-self: flex-end;
+}
+
+.technologies {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  font-size: 18px;
+  font-weight: 700;
+  width: 87px;
+}
+
+.number {
+  position: relative;
+  margin-bottom: 35px;
+  font-family: "AktivGrotesk";
+}
+
+.number::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 21px;
+  background: #000;
+}
+
+.technologiesItem {
+  margin-bottom: 20px;
+  font-family: "AktivGroteskEx";
+}
