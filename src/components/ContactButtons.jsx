@@ -2,6 +2,13 @@ import s from "../styles/ContactButtons.module.css";
 import { ArrowUp } from "./Icons";
 
 const ContactButtons = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return <div className={s.contactsHolder}>
     <div className={s.contacts}>
       <div className={s.btnRow}>
@@ -12,7 +19,7 @@ const ContactButtons = () => {
         <button className={s.codeBtn}><a href="https://github.com/YanaWhitte" target="_blank">my code</a></button>
       </div>
       <div className={s.arrow}>
-        <button className={s.arrowBtn}>
+        <button className={s.arrowBtn} onClick={scrollToTop}>
           <ArrowUp />
           back to top
         </button>
