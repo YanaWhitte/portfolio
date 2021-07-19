@@ -2,13 +2,123 @@
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  /* margin-right: 17px; */
   box-sizing: border-box;
   background: #000;
 }
 
-.foodService {
-  justify-self: start;
+.card .descriptionBlock {
+  font-family: "AktivGroteskEx";
+  position: absolute;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.descriptionBlock p {
+  font-weight: 700;
+}
+
+.descriptionBlock h1 {
+  font-weight: 900;
+}
+
+.smallCard .descriptionBlock p {
+  font-size: 15px;
+}
+
+.smallCard .descriptionBlock h1 {
+  font-size: 25px;
+}
+
+.middleCard .descriptionBlock p {
+  font-size: 18px;
+}
+
+.middleCard .descriptionBlock h1 {
+  font-size: 36px;
+}
+
+.bigCard .descriptionBlock p {
+  font-size: 23px;
+}
+
+.bigCard .descriptionBlock h1 {
+  font-size: 45px;
+}
+
+.vkStatisticsText {
+  top: 4px;
+  left: 6px;
+}
+
+.foodServiceText {
+  bottom: 30px;
+  right: 5px;
+  text-align: right;
+}
+
+.capedText {
+  bottom: 22px;
+  right: 18px;
+}
+
+.generatorText {
+  top: 22px;
+  left: 18px;
+}
+
+.challengesText {
+  top: 5px;
+  left: 5px;
+}
+
+.dynamicTimePageText {
+  bottom: 40px;
+  left: 10px;
+}
+
+.designerMarketplaceText {
+  bottom: 5px;
+  left: 5px;
+}
+
+.freshnesecomText {
+  top: 24px;
+  right: 10px;
+  text-align: right;
+}
+
+.pizzaTimeText {
+  bottom: 158px;
+  right: 25px;
+  text-align: right;
+}
+
+.laslesVpnText {
+  bottom: 30px;
+  left: 10px;
+}
+
+.landifyText {
+  bottom: 30px;
+  right: 10px;
+  text-align: right;
+}
+
+.keksbyText {
+  top: 15px;
+  left: 10px;
+}
+
+.dashboardText {
+  top: 35px;
+  right: 5px;
+  text-align: right;
+}
+
+.wkndText {
+  bottom: 90px;
+  left: 10px;
 }
 
 .card img {
@@ -41,7 +151,7 @@
 }
 
 .vkStatistics img {
-  top: 51px;
+  top: 80px;
   left: 55px;
 }
 
@@ -61,12 +171,12 @@
 }
 
 .challenges img {
-  top: 51px;
+  bottom: 30px;
   left: 70px;
 }
 
 .dynamicTimePage img {
-  top: 80px;
+  top: 60px;
   left: -45px;
 }
 
