@@ -51,7 +51,29 @@
 }
 
 .menuItem {
+  position: relative;
   margin-right: 30px;
   font-family: "AktivGroteskEx";
   color: #000;
+  transition: opacity 0.2s ease;
+}
+
+.menuItem::after {
+  transition: opacity 0.2s ease;
+  opacity: 0;
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #000;
+}
+
+.menuItem:hover::after {
+  opacity: 1;
+}
+
+.menuItem:active {
+  opacity: 0.5;
 }

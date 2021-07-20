@@ -43,11 +43,33 @@
 }
 
 .menuItem {
+  position: relative;
   margin-right: 50px;
   font-family: "Aktiv Grotesk", sans-serif;
   font-weight: 700;
   text-decoration: none;
   color: #fff;
+  transition: opacity 0.2s ease;
+}
+
+.menuItem::after {
+  transition: opacity 0.2s ease;
+  opacity: 0;
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+}
+
+.menuItem:hover::after {
+  opacity: 1;
+}
+
+.menuItem:active {
+  opacity: 0.5;
 }
 
 .resume {
@@ -70,6 +92,6 @@
   font-size: 125px;
   line-height: 100px;
   color: #000;
-  text-shadow: -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff, 1px 0 0 #fff,
-    1px 1px 0 #fff, 0 1px 0 #fff, -1px 1px 0 #fff, -1px 0 0 #fff;
+  text-shadow: -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff, 1px 0 0 #fff, 1px 1px 0 #fff, 0 1px 0 #fff,
+    -1px 1px 0 #fff, -1px 0 0 #fff;
 }
