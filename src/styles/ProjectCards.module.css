@@ -121,8 +121,12 @@
   left: 10px;
 }
 
-.card img {
+.card .imgWrap {
   position: absolute;
+  width: 100%;
+}
+
+.card img {
   width: 100%;
   height: auto;
   filter: grayscale(100%);
@@ -150,72 +154,72 @@
   height: 194px;
 }
 
-.vkStatistics img {
+.vkStatistics .imgWrap {
   top: 80px;
   left: 55px;
 }
 
-.foodService img {
+.foodService .imgWrap {
   top: 51px;
   left: 70px;
 }
 
-.caped img {
+.caped .imgWrap {
   top: 30px;
   left: -80px;
 }
 
-.generator img {
+.generator .imgWrap {
   bottom: 70px;
   left: 40px;
 }
 
-.challenges img {
+.challenges .imgWrap {
   bottom: 30px;
   left: 70px;
 }
 
-.dynamicTimePage img {
+.dynamicTimePage .imgWrap {
   top: 60px;
   left: -45px;
 }
 
-.DesignerMarketplace img {
+.DesignerMarketplace .imgWrap {
   top: 0px;
   left: 30px;
 }
 
-.freshnesecom img {
+.freshnesecom .imgWrap {
   bottom: 60px;
   left: 45px;
 }
 
-.pizzaTime img {
+.pizzaTime .imgWrap {
   top: 60px;
   left: -105px;
 }
 
-.laslesVpn img {
+.laslesVpn .imgWrap {
   top: 25px;
   left: 45px;
 }
 
-.landify img {
+.landify .imgWrap {
   top: 15px;
   left: -45px;
 }
 
-.keksby img {
+.keksby .imgWrap {
   top: 125px;
   left: -25px;
 }
 
-.dashboard img {
+.dashboard .imgWrap {
   bottom: -9px;
   left: -30px;
 }
 
-.wknd img {
+.wknd .imgWrap {
   top: 15px;
   left: 40px;
 }
