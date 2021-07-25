@@ -73,7 +73,7 @@ const BlackSquare = ({ bgwidth, bgheight }) => {
           <li>
             <a
               className={`${s.menuItem} hue-rotation hue-rotation-brightness-filter ${s.resume}`}
-              href="/CV.pdf"
+              href="/Bychilova-Yana_CV.pdf"
               download
             >
               resume

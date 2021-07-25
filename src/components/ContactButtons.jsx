@@ -18,7 +18,7 @@ const ContactButtons = React.forwardRef((_, ref) => {
       <div className={s.contacts}>
         <div className={s.btnRow}>
           <button {...handlers} className={`${s.downloadBtn} hue-rotation`}>
-            <a href="/CV.pdf" download>
+            <a href="/Bychilova-Yana_CV.pdf" download>
               download cv
             </a>
           </button>

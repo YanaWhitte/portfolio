@@ -12,7 +12,7 @@ const Sidebar = ({ show }) => {
             { children: "github", href: "https://github.com/YanaWhitte", target: "_blank" },
             { children: "linkedin", href: "https://www.linkedin.com/in/whiony", target: "_blank" },
             { children: "email", href: "mailto:whiony@gmail.com" },
-            { children: "cv", href: "CV.pdf" },
+            { children: "cv", href: "Bychilova-Yana_CV.pdf", download: true },
           ].map((props) => (
             <a className={`hue-rotation ${s.menuItem}`} {...props} key={props.href} />
           ))}
