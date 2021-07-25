@@ -4,21 +4,119 @@
   overflow: hidden;
   box-sizing: border-box;
   background: #000;
+  transform-origin: 50%;
+  /* transform: rotate3d(1, 0, 0, 0deg); */
+  transform: scale(1);
+  perspective: 100px;
+  transition: opacity 0.7s ease, transform 0.9s ease;
+}
+
+.card.alternate {
+  transform: scale(1) !important;
+  opacity: 1 !important;
+}
+
+.cardHidden {
+  opacity: 0;
+  transform: scale(1.2);
+  /* transform: rotate3d(1, 0, 0, -89deg); */
 }
 
 .card .descriptionBlock {
+  opacity: 0;
+}
+
+.card:hover .descriptionBlock {
+  opacity: 1;
+}
+
+.card .glass {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.card .glass .block {
+  background-color: transparent;
+}
+
+.bigCard .descriptionBlock {
+  min-width: 236px;
+  max-width: 300px;
+  margin-left: 56px;
+  background-color: #000;
+  padding-top: 91px;
+  padding-right: 20px;
+}
+
+.smallCard .descriptionBlock {
+  padding-top: 38px;
+  margin-left: 12px;
+}
+
+.middleCard.challenges .descriptionBlock {
+  max-width: 74%;
+}
+.middleCard.challenges .descriptionBlock h3 {
+  text-transform: lowercase;
+}
+
+.middleCard.vkStatistics .descriptionBlock {
+  max-width: 64%;
+}
+
+.middleCard .descriptionBlock {
+  padding-right: 20px;
+  margin-left: 32px;
+  max-width: 200px;
+
+  padding-top: 48px;
+}
+.bigCard.generator .descriptionBlock {
+  max-width: 64%;
+}
+
+.bigCard.freshnesecom .descriptionBlock {
+  max-width: 100%;
+}
+.middleCard.DesignerMarketplace .descriptionBlock {
+  max-width: 72%;
+}
+.middleCard.vkStatistics .descriptionBlock {
+  max-width: 80%;
+}
+
+.bigCard .descriptionBlock p {
+  margin-bottom: 14px;
+}
+.bigCard .descriptionBlock h3,
+.middleCard .descriptionBlock h3 {
+  text-transform: uppercase;
+}
+
+.card .descriptionBlock.hide {
+  opacity: 0;
+}
+.card .descriptionBlock {
   font-family: "AktivGroteskEx";
   position: absolute;
-  color: #fff;
+  color: var(--light-color);
   opacity: 0;
-  transition: all 0.5s ease;
+  transition: opacity 0.5s ease, background 1s ease;
 }
 
 .descriptionBlock p {
   font-weight: 700;
 }
 
-.descriptionBlock h1 {
+.descriptionBlock h3 {
   font-weight: 900;
 }
 
@@ -26,7 +124,7 @@
   font-size: 15px;
 }
 
-.smallCard .descriptionBlock h1 {
+.smallCard .descriptionBlock h3 {
   font-size: 25px;
 }
 
@@ -34,7 +132,7 @@
   font-size: 18px;
 }
 
-.middleCard .descriptionBlock h1 {
+.middleCard .descriptionBlock h3 {
   font-size: 36px;
 }
 
@@ -42,7 +140,7 @@
   font-size: 23px;
 }
 
-.bigCard .descriptionBlock h1 {
+.bigCard .descriptionBlock h3 {
   font-size: 45px;
 }
 
@@ -140,18 +238,18 @@
 }
 
 .bigCard {
-  width: 518px;
-  height: 518px;
+  width: var(--big-card-size);
+  height: var(--big-card-size);
 }
 
 .middleCard {
-  width: 303px;
-  height: 303px;
+  width: var(--middle-card-size);
+  height: var(--middle-card-size);
 }
 
 .smallCard {
-  width: 194px;
-  height: 194px;
+  width: var(--small-card-size);
+  height: var(--small-card-size);
 }
 
 .vkStatistics .imgWrap {
@@ -222,4 +320,34 @@
 .wknd .imgWrap {
   top: 15px;
   left: 40px;
+}
+
+@media screen and (max-width: 990px) {
+  .bigCard,
+  .middleCard,
+  .smallCard {
+    width: 100%;
+  }
+  .card .descriptionBlock {
+    opacity: 1;
+    margin-left: 56px;
+    min-width: 40%;
+    padding-top: 10%;
+  }
+  .card .descriptionBlock h3 {
+    font-size: 45px;
+    text-transform: uppercase !important;
+  }
+  .card .descriptionBlock p {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .card .descriptionBlock {
+    margin-left: 24px;
+
+    transform: scale(0.75);
+    transform-origin: 0% 0%;
+  }
 }

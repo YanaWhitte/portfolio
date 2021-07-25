@@ -1,6 +1,6 @@
 .projectsSection {
   display: grid;
-  width: 1264px;
+  width: var(--main-container-width);
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 10fr;
   grid-gap: 20px;
@@ -93,4 +93,33 @@
 .technologiesItem {
   margin-bottom: 20px;
   font-family: "AktivGroteskEx";
+}
+
+@media screen and (max-width: 1279px) {
+  .technologies {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .projectsSection {
+    grid-template-columns: 1fr;
+  }
+  .projectsSection .row {
+    grid-template-columns: 1fr !important;
+
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  .columnContainer .innerRow {
+    grid-template-columns: 1fr !important;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex !important;
+  }
+  .mainGrid.reactGrid .row {
+    grid-template-columns: 1fr !important;
+  }
 }

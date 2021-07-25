@@ -29,7 +29,7 @@
   align-items: flex-end;
   display: flex;
   font-size: 48px;
-  color: #fff;
+  color: var(--bg-color);
   background: #000;
 }
 
@@ -76,4 +76,16 @@
 
 .menuItem:active {
   opacity: 0.5;
+}
+
+@media screen and (max-width: 1279px) {
+  .sidebarContainer {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .title {
+    height: 81px;
+  }
 }

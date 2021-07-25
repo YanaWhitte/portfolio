@@ -43,6 +43,7 @@ const ReactProjectsGrid = () => {
       </div>
       <div className={s.row}>
         <BigCard
+          alternate
           cover="caped"
           extraClass={spc.caped}
           link="https://caped.vercel.app/"
@@ -61,6 +62,7 @@ const ReactProjectsGrid = () => {
       </div>
       <div className={s.row}>
         <MiddleCard
+          alternate
           cover="little-challenges"
           extraClass={spc.challenges}
           link="https://little-challenges.vercel.app/mouse-drawing"

@@ -3,7 +3,7 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 10fr 1fr;
-  width: 1264px;
+  width: var(--main-container-width);
   margin: 0 auto;
 }
 
@@ -42,30 +42,66 @@
   width: 100%;
 }
 
+.downloadBtn:hover {
+  background-color: transparent;
+  border: 3px solid var(--dark-color);
+}
+
 .downloadBtn a {
-  color: #fff;
+  color: var(--bottom-outline);
+}
+
+.downloadBtn:hover a {
+  color: var(--dark-color);
+}
+
+.btnRow button {
+  transition: filter var(--hue-rotation-transition-delay) ease, background 0.5s ease-in-out;
+  /* ; */
 }
 
 .emailBtn {
   background: #000;
   height: 203px;
+  border: 3px solid var(--bottom-outline);
+}
+
+.emailBtn:hover {
+  background: transparent;
+  border: 3px solid var(--dark-color);
 }
 
 .emailBtn a {
   color: #000;
-  text-shadow: -1px -1px 0 #fff, 0 -1px 0 #fff, 1px -1px 0 #fff, 1px 0 0 #fff, 1px 1px 0 #fff, 0 1px 0 #fff,
-    -1px 1px 0 #fff, -1px 0 0 #fff;
+  text-shadow: -1px -1px 0 var(--bottom-outline), 0 -1px 0 var(--bottom-outline), 1px -1px 0 var(--bottom-outline),
+    1px 0 0 var(--bottom-outline), 1px 1px 0 var(--bottom-outline), 0 1px 0 var(--bottom-outline),
+    -1px 1px 0 var(--bottom-outline), -1px 0 0 var(--bottom-outline);
 }
 
-.codeBtn {
+.codeBtn:hover {
   background: transparent;
   border: 3px solid #000;
+  color: #000;
   height: 407px;
   text-align: right;
+  border: 3px solid var(--dark-color);
+}
+
+.codeBtn:hover a {
+  color: #000;
 }
 
 .codeBtn a {
-  color: #000;
+  color: var(--bottom-outline);
+}
+
+.codeBtn {
+  height: 407px;
+  text-align: right;
+
+  color: var(--bottom-outline);
+  background: var(--dark-color);
+  border: 3px solid var(--bottom-color);
 }
 
 .arrow {
@@ -84,4 +120,37 @@
   font-size: 18px;
   border: none;
   background: transparent;
+}
+
+@media screen and (max-width: 1279px) {
+  .contactsHolder {
+    grid-template-columns: 10fr;
+  }
+
+  .contacts {
+    grid-column-start: 1;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .contactsHolder {
+    max-width: 90%;
+  }
+
+  .downloadBtn,
+  .emailBtn,
+  .codeBtn {
+    font-size: 97px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .downloadBtn,
+  .emailBtn,
+  .codeBtn {
+    font-size: 60px;
+  }
+  .btnRow a {
+    bottom: -20px;
+  }
 }

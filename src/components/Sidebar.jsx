@@ -1,23 +1,22 @@
 import s from "../styles/Sidebar.module.css";
-
+import { useHover } from "../hooks";
 const Sidebar = ({ show }) => {
+  const handlers = useHover();
   return (
     <div className={`${s.sidebarContainer} ${show ? s.show : ""}`}>
       <div className={s.sidebar}>
-        <div className={s.menu}>
+        <div {...handlers} className={s.menu}>
           <div className={s.line}></div>
-          <a className={s.menuItem} href="https://github.com/YanaWhitte" target="_blank">
-            github
-          </a>
-          <a className={s.menuItem} href="https://www.linkedin.com/in/whiony" target="_blank">
-            linkedin
-          </a>
-          <a className={s.menuItem} href="mailto:whiony@gmail.com">
-            email
-          </a>
-          <a className={s.menuItem} href="/CV.pdf" download>
-            cv
-          </a>
+
+          {[
+            { children: "github", href: "https://github.com/YanaWhitte", target: "_blank" },
+            { children: "linkedin", href: "https://www.linkedin.com/in/whiony", target: "_blank" },
+            { children: "email", href: "mailto:whiony@gmail.com" },
+            { children: "cv", href: "CV.pdf" },
+          ].map((props) => (
+            <a className={`hue-rotation ${s.menuItem}`} {...props} key={props.href} />
+          ))}
+
           <div className={s.line}></div>
         </div>
         <div className={s.title}>

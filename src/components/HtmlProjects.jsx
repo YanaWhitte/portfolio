@@ -33,11 +33,12 @@ const HtmlProjectsGrid = () => {
             projectName={spc.dynamicTimePageText}
           />
           <MiddleCard
+            alternate
             cover="designer-marketplace"
             extraClass={`${spc.DesignerMarketplace} ${s.DesignerMarketplace}`}
             link="https://yanawhitte.github.io/designer-marketplace/index.html"
             description="html page"
-            title="Designer Marketplace"
+            title="Designer Market place"
             projectName={spc.designerMarketplaceText}
           />
         </div>
@@ -52,6 +53,7 @@ const HtmlProjectsGrid = () => {
       </div>
       <div className={s.row}>
         <BigCard
+          alternate
           cover="pizza-time"
           extraClass={spc.pizzaTime}
           link="https://yanawhitte.github.io/pizza-time/"
@@ -67,11 +69,12 @@ const HtmlProjectsGrid = () => {
             extraClass={spc.laslesVpn}
             link="https://yanawhitte.github.io/landingpage-lasles-vpn/"
             description="html page"
-            title="LaslesVPN"
+            title="Lasles VPN"
             projectName={spc.laslesVpnText}
           />
           <MiddleCard
             cover="landify"
+            alternate
             extraClass={`${spc.landify} ${s.landify}`}
             link="https://yanawhitte.github.io/landify/"
             description="html page"
@@ -92,6 +95,7 @@ const HtmlProjectsGrid = () => {
           </div>
           <div className={s.innerRow}>
             <SmallCard
+              alternate
               cover="dashboard"
               extraClass={`${spc.dashboard} ${s.dashboard}`}
               link="https://yanawhitte.github.io/dashboard/"
@@ -108,7 +112,7 @@ const HtmlProjectsGrid = () => {
           extraClass={spc.wknd}
           link="https://yanawhitte.github.io/WKND/"
           description="html page"
-          title="VK Statistics"
+          title="WKND"
           projectName={spc.wkndText}
         />
       </div>

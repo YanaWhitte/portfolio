@@ -1,1 +1,55 @@
+.app-backdrop {
+  --height: 100vh;
+  --divisor: 20;
+  background-image: linear-gradient(0.1turn, hsl(173, 82%, 80%), hsl(115, 100%, 70%));
+  background-size: calc(100% / var(--divisor)) 100vh;
+  background-position: top left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(var(--bg-brightness)) hue-rotate(calc(var(--hue) * 1deg)) grayscale(var(--grayscale));
+  transition: filter var(--hue-rotation-transition-delay) ease;
+  width: calc(100% / var(--divisor)) !important;
+  height: var(--height);
+  transform-origin: 0% 100%;
+  transform: scaleX(var(--divisor));
+}
 
+.app-backdrop::after {
+  background-image: linear-gradient(0.1turn, hsl(266, 78%, 70%), hsl(244, 69%, 77%));
+  /* background-size: calc(100% / var(--divisor)) 100vh; */
+  background-position: top left;
+  position: fixed;
+  content: "";
+  opacity: var(--show-bottom-opacity);
+  top: 0;
+  left: 0;
+  transition: filter var(--hue-rotation-transition-delay) ease, opacity var(--hue-rotation-transition-delay) ease;
+  width: calc(100% / var(--divisor)) !important;
+  height: var(--height);
+  transform-origin: 0% 100%;
+  transform: scaleX(var(--divisor));
+}
+/* 
+.app-backdrop {
+  --col1-br: calc(80% * var(--bg-brightness));
+  --col2-br: calc(70% * var(--bg-brightness));
+  background-image: var(--noise),
+    linear-gradient(
+      0.1turn,
+      hsl(calc(173 + var(--hue)), 82%, calc(var(--col1-br) * 1.1)),
+      hsl(calc(115 + var(--hue)), 100%, calc(var(--col2-br) * 1.1))
+    );
+  background-size: var(--noise-size), 100% 100vh;
+  background-position: var(--noise-offset), top left;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+} */
+/* 
+.app-backdrop.v2 {
+  background-image: var(--noise), linear-gradient(0.1turn, hsl(266, 78%, 70%), hsl(244, 69%, 77%));
+} */
