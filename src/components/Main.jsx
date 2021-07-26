@@ -21,7 +21,7 @@ const Description = () => {
       <div className={s.aboutMe}>
         <p>
           working with top-end
-          <br /> tech to devlier
+          <br /> tech to deliver
           <br /> awesome web experiences
         </p>
       </div>
