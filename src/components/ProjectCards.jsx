@@ -30,7 +30,7 @@ const makeCardComponent =
           onClick={() => {
             window.open(link, '_blank').focus();
           }}
-          className={`${className} ${spc.card} ${extraClass} ${inView ? "" : spc.cardHidden} ${alternate ? spc.alternate : ""
+          className={`${className} ${spc.card} ${extraClass} ${true ? "" : spc.cardHidden} ${alternate ? spc.alternate : ""
             }`}
         >
           <div className={spc.glass}>
@@ -41,7 +41,7 @@ const makeCardComponent =
           </div>
           {/* eslint-disable-next-line react/jsx-no-target-blank */}
           <a href={link} target="_blank">
-            <Parallax slowerScrollRate offsetYMax={100} offsetYMin={-100} className={spc.imgWrap}>
+            <Parallax slowerScrollRate /* offsetYMax={100} offsetYMin={-100}  */ className={spc.imgWrap}>
               <img src={process.env.PUBLIC_URL + `/img/${cover}.png`} alt="project cover" />
             </Parallax>
           </a>

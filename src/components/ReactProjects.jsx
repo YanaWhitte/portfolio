@@ -13,9 +13,7 @@ const ReactProjects = () => {
         <p className={s.technologiesItem}>Redux</p>
         <p className={s.technologiesItem}>Router</p>
       </div>
-      <ParallaxProvider>
-        <ReactProjectsGrid />
-      </ParallaxProvider>
+      <ReactProjectsGrid />
     </div>
   );
 };

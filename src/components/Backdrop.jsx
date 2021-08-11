@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 const timeoutTime = 1500;
 const transitionChangeTimeout = 2000;
 
-const Backdrop = ({ width, height }) => {
+const Backdrop = () => {
   const ref = useRef(null)
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -23,7 +23,7 @@ const Backdrop = ({ width, height }) => {
     if (ref.current) {
       ref.current.style.setProperty("--height", '100vh')//`${height * 1.04}px`)
     }
-  }, [height])
+  }, [])
 
   return (
     <div

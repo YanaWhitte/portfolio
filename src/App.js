@@ -7,6 +7,7 @@ import ContactButtons from "./components/ContactButtons";
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import Scrollbar from "smooth-scrollbar";
 import Backdrop from "./components/Backdrop";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 const USE_CUSTOM_SCROLLBAR = false;
 
@@ -16,6 +17,9 @@ function App() {
   const projectsRef = useRef(null);
   const contactButtonsRef = useRef(null);
   const appRef = useRef(null);
+  const rect = appRef.current?.getBoundingClientRect();
+  const height = rect?.height;
+  const width = rect?.width;
 
   useEffect(() => {
     update((x) => x + 1);
@@ -67,10 +71,8 @@ function App() {
 
   useEffect(() => {
     document.body.style.setProperty("--grayscale", show ? "100%" : "0%");
-    document.body.style.setProperty("--bg-brightness", show ? "1.24" : "1");
+    document.body.style.setProperty("--bg-brightness", show ? "1.2" : "1");
   }, [show]);
-
-  const rect = appRef.current?.getBoundingClientRect();
 
   useEffect(() => {
     const handler = () => update((x) => x + 1);
@@ -78,8 +80,6 @@ function App() {
     return () => window.removeEventListener("resize", handler);
   }, []);
 
-  const height = rect?.height;
-  const width = rect?.width;
   useEffect(() => {
     const handler = (e) => {
       if (!show) {
@@ -93,18 +93,6 @@ function App() {
     document.addEventListener("mousemove", handler);
     return () => document.removeEventListener("mousemove", handler);
   }, [width, show]);
-
-  // useEffect(() => {
-  //   const frameRate = 15;
-  //   const interval = setInterval(() => {
-  //     document.body.style.setProperty(
-  //       "--noise-offset",
-  //       `calc(${Math.random() * 3} * var(--noise-size)) calc(${Math.random() * 3} * var(--noise-size))`
-  //     );
-  //   }, (1 / frameRate) * 1000);
-
-  //   return () => clearInterval(interval);
-  // }, []);
 
   return (
     <div
@@ -121,7 +109,7 @@ function App() {
       }
     >
       <div className="cursor" />
-      <Backdrop width={width} height={height} />
+      <Backdrop />
       <Sidebar show={show} />
       <Main bgheight={height} bgwidth={width} />
       <section ref={projectsRef}>
@@ -136,10 +124,10 @@ function App() {
 
 const Projects = React.memo(function Projects() {
   return (
-    <>
+    <ParallaxProvider>
       <ReactProjects />
       <HtmlProjects />
-    </>
+    </ParallaxProvider>
   );
 });
 

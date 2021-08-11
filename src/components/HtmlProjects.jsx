@@ -12,9 +12,7 @@ const HtmlProjects = () => {
         <p className={s.technologiesItem}>CSS</p>
         <p className={s.technologiesItem}>JS</p>
       </div>
-      <ParallaxProvider>
-        <HtmlProjectsGrid />
-      </ParallaxProvider>
+      <HtmlProjectsGrid />
     </div>
   );
 };
