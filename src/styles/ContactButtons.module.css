@@ -56,43 +56,32 @@
 }
 
 .btnRow button {
-  transition: filter var(--hue-rotation-transition-delay) ease, background 0.5s ease-in-out;
+  transition: filter var(--hue-rotation-transition-delay) ease, background 0.2s ease-in-out;
   /* ; */
 }
 
-.emailBtn {
+.emailBtn,
+.downloadBtn,
+.codeBtn {
   background: #000;
   height: 203px;
   border: 3px solid var(--bottom-outline);
 }
 
-.emailBtn:hover {
+.emailBtn:hover,
+.downloadBtn:hover,
+.codeBtn:hover {
   background: transparent;
   border: 3px solid var(--dark-color);
 }
 
-.emailBtn a {
+.emailBtn a,
+.downloadBtn a,
+.codeBtn a {
   color: #000;
   text-shadow: -1px -1px 0 var(--bottom-outline), 0 -1px 0 var(--bottom-outline), 1px -1px 0 var(--bottom-outline),
     1px 0 0 var(--bottom-outline), 1px 1px 0 var(--bottom-outline), 0 1px 0 var(--bottom-outline),
     -1px 1px 0 var(--bottom-outline), -1px 0 0 var(--bottom-outline);
-}
-
-.codeBtn:hover {
-  background: transparent;
-  border: 3px solid #000;
-  color: #000;
-  height: 407px;
-  text-align: right;
-  border: 3px solid var(--dark-color);
-}
-
-.codeBtn:hover a {
-  color: #000;
-}
-
-.codeBtn a {
-  color: var(--bottom-outline);
 }
 
 .codeBtn {
@@ -101,7 +90,6 @@
 
   color: var(--bottom-outline);
   background: var(--dark-color);
-  border: 3px solid var(--bottom-color);
 }
 
 .arrow {

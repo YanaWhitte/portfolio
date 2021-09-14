@@ -28,7 +28,7 @@ const ContactButtons = React.forwardRef((_, ref) => {
             <a href="mailto:whiony@gmail.com">email</a>
           </button>
           <button {...handlers} className={`${s.codeBtn} hue-rotation`} >
-            <a href="https://github.com/YanaWhitte" target="_blank">
+            <a href="https://github.com/whiony" target="_blank">
               my code
             </a>
           </button>

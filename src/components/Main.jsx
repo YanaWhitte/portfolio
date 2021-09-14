@@ -45,7 +45,7 @@ const BlackSquare = ({ bgwidth, bgheight }) => {
           <li>
             <a
               className={`${s.menuItem} hue-rotation hue-rotation-brightness-filter`}
-              href="https://github.com/YanaWhitte"
+              href="https://github.com/whiony"
               target="_blank"
             >
               github

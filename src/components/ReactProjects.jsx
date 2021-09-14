@@ -52,7 +52,7 @@ const ReactProjectsGrid = () => {
         <BigCard
           cover="cat-name-generator"
           extraClass={spc.generator}
-          link="https://yanawhitte.github.io/cat-name-generator/"
+          link="https://whiony.github.io/cat-name-generator/"
           description="react app"
           title="Cat Name Generator"
           projectName={spc.generatorText}

@@ -9,7 +9,7 @@ const Sidebar = ({ show }) => {
           <div className={s.line}></div>
 
           {[
-            { children: "github", href: "https://github.com/YanaWhitte", target: "_blank" },
+            { children: "github", href: "https://github.com/whiony", target: "_blank" },
             { children: "linkedin", href: "https://www.linkedin.com/in/whiony", target: "_blank" },
             { children: "email", href: "mailto:whiony@gmail.com" },
             { children: "cv", href: "Bychilova-Yana_CV.pdf", download: true },

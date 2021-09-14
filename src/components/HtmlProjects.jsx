@@ -25,7 +25,7 @@ const HtmlProjectsGrid = () => {
           <BigCard
             cover="dynamic-time-page"
             extraClass={spc.dynamicTimePage}
-            link="https://yanawhitte.github.io/dynamic-time-page/"
+            link="https://whiony.github.io/dynamic-time-page/"
             description="html page"
             title="Dynamic Time Page"
             projectName={spc.dynamicTimePageText}
@@ -34,7 +34,7 @@ const HtmlProjectsGrid = () => {
             alternate
             cover="designer-marketplace"
             extraClass={`${spc.DesignerMarketplace} ${s.DesignerMarketplace}`}
-            link="https://yanawhitte.github.io/designer-marketplace/index.html"
+            link="https://whiony.github.io/designer-marketplace/index.html"
             description="html page"
             title="Designer Market place"
             projectName={spc.designerMarketplaceText}
@@ -43,7 +43,7 @@ const HtmlProjectsGrid = () => {
         <BigCard
           cover="freshnesecom-layout"
           extraClass={`${spc.freshnesecom} ${s.freshnesecom}`}
-          link="https://yanawhitte.github.io/freshnesecom-layout/"
+          link="https://whiony.github.io/freshnesecom-layout/"
           description="html page"
           title="Freshnesecom"
           projectName={spc.freshnesecomText}
@@ -54,7 +54,7 @@ const HtmlProjectsGrid = () => {
           alternate
           cover="pizza-time"
           extraClass={spc.pizzaTime}
-          link="https://yanawhitte.github.io/pizza-time/"
+          link="https://whiony.github.io/pizza-time/"
           description="html page"
           title="Pizza Time"
           projectName={spc.pizzaTimeText}
@@ -65,7 +65,7 @@ const HtmlProjectsGrid = () => {
           <MiddleCard
             cover="lasles-vpn"
             extraClass={spc.laslesVpn}
-            link="https://yanawhitte.github.io/landingpage-lasles-vpn/"
+            link="https://whiony.github.io/landingpage-lasles-vpn/"
             description="html page"
             title="Lasles VPN"
             projectName={spc.laslesVpnText}
@@ -74,7 +74,7 @@ const HtmlProjectsGrid = () => {
             cover="landify"
             alternate
             extraClass={`${spc.landify} ${s.landify}`}
-            link="https://yanawhitte.github.io/landify/"
+            link="https://whiony.github.io/landify/"
             description="html page"
             title="Landify"
             projectName={spc.landifyText}
@@ -85,7 +85,7 @@ const HtmlProjectsGrid = () => {
             <BigCard
               cover="keksby"
               extraClass={spc.keksby}
-              link="https://yanawhitte.github.io/keksby/"
+              link="https://whiony.github.io/keksby/"
               description="html page"
               title="Keksby"
               projectName={spc.keksbyText}
@@ -96,7 +96,7 @@ const HtmlProjectsGrid = () => {
               alternate
               cover="dashboard"
               extraClass={`${spc.dashboard} ${s.dashboard}`}
-              link="https://yanawhitte.github.io/dashboard/"
+              link="https://whiony.github.io/dashboard/"
               description="html page"
               title="Dashboard"
               projectName={spc.dashboardText}
@@ -108,7 +108,7 @@ const HtmlProjectsGrid = () => {
         <BigCard
           cover="wknd"
           extraClass={spc.wknd}
-          link="https://yanawhitte.github.io/WKND/"
+          link="https://whiony.github.io/WKND/"
           description="html page"
           title="WKND"
           projectName={spc.wkndText}
